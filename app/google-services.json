@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "847972832719",
+    "firebase_url": "https://khana-food-ordering-app.firebaseio.com",
+    "project_id": "khana-food-ordering-app",
+    "storage_bucket": "khana-food-ordering-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847972832719:android:10ef857fbf78b31bfb2eba",
+        "android_client_info": {
+          "package_name": "com.example.foodorderingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847972832719-hn4son7e2o67k8uskfa169401hchknrq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodorderingapp",
+            "certificate_hash": "2124084ae912081c3133f39e836f4f8711281277"
+          }
+        },
+        {
+          "client_id": "847972832719-8godbf388pijuf97r7o95gse6c824i0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBe9ucv_jS6CQfLVvoWc0tWQZUsRUkzfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847972832719-8godbf388pijuf97r7o95gse6c824i0d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847972832719:android:665dd3698cb86fc2fb2eba",
+        "android_client_info": {
+          "package_name": "com.oop.foodordering"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847972832719-8godbf388pijuf97r7o95gse6c824i0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBe9ucv_jS6CQfLVvoWc0tWQZUsRUkzfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847972832719-8godbf388pijuf97r7o95gse6c824i0d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

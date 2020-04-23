@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/banner3"/>
+    <TextView
+        android:id="@+id/menuTv"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Menu"
+        android:textAlignment="center"
+        android:textColor="#43596f"
+        android:textSize="40sp" />
+
+    <ScrollView
+        android:id="@+id/myScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/haleem_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/salad" />
+
+                    <TextView
+                        android:id="@+id/haleem_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/haleem_photo"
+                        android:fontFamily="@font/gatholic"
+                        android:text="Salad"
+                        android:textColor="@color/dark_black"
+                        android:textSize="25sp" />
+
+                    <TextView
+
+                        android:id="@+id/haleem_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/haleem_textView"
+                        android:layout_toRightOf="@id/haleem_photo"
+                        android:fontFamily="@font/gatholic"
+                        android:text="Rs. 80"
+                        android:textColor="@color/colorAccent" />
+
+                    <Button
+                        android:id="@+id/haleem_button_rm"
+                        android:layout_width="30dp"
+                        android:layout_height="45dp"
+                        android:layout_alignBaseline="@+id/haleem_button"
+                        android:layout_marginLeft="0dp"
+
+                        android:layout_toLeftOf="@id/haleem_button"
+                        android:background="@drawable/minus"
+                        android:gravity="center"
+                        android:onClick="rmv_from_list"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/haleem_button"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/add3"
+                        android:gravity="center"
+                        android:onClick="add_to_list"
+                        android:textColor="#fff"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/biriyani_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/pizza" />
+
+                    <TextView
+                        android:id="@+id/biriyani_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/biriyani_photo"
+                        android:fontFamily="@font/gatholic"
+                        android:text="Pizza"
+                        android:textColor="@color/dark_black"
+                        android:textSize="25sp" />
+
+                    <TextView
+
+                        android:id="@+id/biriyani_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/biriyani_textView"
+                        android:layout_toRightOf="@id/biriyani_photo"
+                        android:fontFamily="@font/gatholic"
+                        android:text="Rs. 250"
+                        android:textColor="@color/colorAccent" />
+
+                    <Button
+                        android:id="@+id/biriyani_button_rm"
+                        android:layout_width="30dp"
+                        android:layout_height="45dp"
+                        android:layout_alignBaseline="@+id/biriyani_button"
+                        android:layout_marginLeft="0dp"
+
+                        android:layout_toLeftOf="@id/biriyani_button"
+                        android:background="@drawable/minus"
+                        android:gravity="center"
+                        android:onClick="rmv_from_list"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/biriyani_button"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/add3"
+                        android:gravity="center"
+                        android:onClick="add_to_list"
+                        android:textColor="#fff"
+                        android:textSize="10sp" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/fried_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/curry" />
+
+                    <TextView
+                        android:id="@+id/fried_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/fried_photo"
+                        android:fontFamily="@font/gatholic"
+                        android:text="Curry"
+                        android:textColor="@color/dark_black"
+                        android:textSize="25sp" />
+
+                    <TextView
+
+                        android:id="@+id/fried_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/fried_textView"
+                        android:layout_toRightOf="@id/fried_photo"
+                        android:fontFamily="@font/gatholic"
+                        android:text="Rs. 220"
+                        android:textColor="@color/colorAccent" />
+
+                    <Button
+                        android:id="@+id/fried_button_rm"
+                        android:layout_width="30dp"
+                        android:layout_height="45dp"
+                        android:layout_alignBaseline="@+id/fried_button"
+                        android:layout_marginLeft="0dp"
+
+                        android:layout_toLeftOf="@id/fried_button"
+                        android:background="@drawable/minus"
+                        android:gravity="center"
+                        android:onClick="rmv_from_list"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+
+                    <Button
+                        android:id="@+id/fried_button"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/add3"
+                        android:gravity="center"
+                        android:onClick="add_to_list"
+                        android:textColor="#fff"
+                        android:textSize="10sp" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/cv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/plain_photo"
+                    android:layout_width="60dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/rice" />
+
+                <TextView
+                    android:id="@+id/plain_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/plain_photo"
+                    android:fontFamily="@font/gatholic"
+                    android:text="Rice"
+                    android:textColor="@color/dark_black"
+                    android:textSize="25sp" />
+
+                <TextView
+
+                    android:id="@+id/plain_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plain_textView"
+                    android:layout_toRightOf="@id/plain_photo"
+                    android:fontFamily="@font/gatholic"
+                    android:text="Rs. 150"
+                    android:textColor="@color/colorAccent" />
+
+                <Button
+                    android:id="@+id/plain_button_rm"
+                    android:layout_width="30dp"
+                    android:layout_height="45dp"
+                    android:layout_alignBaseline="@+id/plain_button"
+                    android:layout_marginLeft="0dp"
+
+                    android:layout_toLeftOf="@id/plain_button"
+                    android:background="@drawable/minus"
+                    android:gravity="center"
+                    android:onClick="rmv_from_list"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+
+                <Button
+                    android:id="@+id/plain_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/add3"
+                    android:gravity="center"
+                    android:onClick="add_to_list"
+                    android:textColor="#fff"
+                    android:textSize="10sp" />
+
+
+
+            </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="0">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/firni_photo"
+                    android:layout_width="60dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/firni" />
+
+                <TextView
+                    android:id="@+id/firni_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/firni_photo"
+                    android:fontFamily="@font/gatholic"
+                    android:text="Firni"
+                    android:textColor="@color/dark_black"
+                    android:textSize="25sp" />
+
+                <TextView
+
+                    android:id="@+id/firni_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/firni_textView"
+                    android:layout_toRightOf="@id/firni_photo"
+                    android:fontFamily="@font/gatholic"
+                    android:text="Rs. 50"
+                    android:textColor="@color/colorAccent" />
+
+                <Button
+                    android:id="@+id/firni_button_rm"
+                    android:layout_width="30dp"
+                    android:layout_height="45dp"
+                    android:layout_alignBaseline="@+id/firni_button"
+                    android:layout_marginLeft="0dp"
+
+                    android:layout_toLeftOf="@id/firni_button"
+                    android:background="@drawable/minus"
+                    android:gravity="center"
+                    android:onClick="rmv_from_list"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+
+                <Button
+                    android:id="@+id/firni_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/add3"
+                    android:gravity="center"
+                    android:onClick="add_to_list"
+                    android:textColor="#fff"
+                    android:textSize="10sp" />
+
+
+            </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/cv6"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_row="6"
+             android:layout_column="0">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/drinks_photo"
+                    android:layout_width="60dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/juice" />
+
+                <TextView
+                    android:id="@+id/drinks_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/drinks_photo"
+                    android:fontFamily="@font/gatholic"
+                    android:text="Fruit Juice"
+                    android:textColor="@color/dark_black"
+                    android:textSize="25sp" />
+
+                <TextView
+
+                    android:id="@+id/drinks_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/drinks_textView"
+                    android:layout_toRightOf="@id/drinks_photo"
+                    android:fontFamily="@font/gatholic"
+                    android:text="Rs. 35"
+                    android:textColor="@color/colorAccent" />
+
+                <Button
+                    android:id="@+id/drinks_button_rm"
+                    android:layout_width="30dp"
+                    android:layout_height="45dp"
+                    android:layout_alignBaseline="@+id/drinks_button"
+                    android:layout_marginLeft="0dp"
+
+                    android:layout_toLeftOf="@id/drinks_button"
+                    android:background="@drawable/minus"
+                    android:gravity="center"
+                    android:onClick="rmv_from_list"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/drinks_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/add3"
+                    android:gravity="center"
+                    android:onClick="add_to_list"
+                    android:textColor="#fff"
+                    android:textSize="10sp" />
+
+
+            </RelativeLayout>
+         </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/order_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="#B71C1C"
+        android:onClick="place_order"
+        android:text="Place Order"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

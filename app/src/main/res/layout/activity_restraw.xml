@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestrawActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/myScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/haleem_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/res1" />
+
+                    <TextView
+                        android:id="@+id/haleem_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/haleem_photo"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/gatholic"
+                        android:text="Garden Fresh Foods"
+                        android:textColor="@color/dark_black"
+                        android:textSize="25sp" />
+
+                    <TextView
+
+                        android:id="@+id/haleem_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/haleem_textView"
+                        android:layout_toRightOf="@id/haleem_photo"
+                        android:fontFamily="@font/gatholic"
+                        android:text="5km"
+                        android:textColor="@color/green" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/biriyani_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/res2" />
+
+                    <TextView
+                        android:id="@+id/biriyani_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/biriyani_photo"
+                        android:fontFamily="@font/gatholic"
+                        android:text="Veggie  Grill"
+                        android:textColor="@color/dark_black"
+                        android:textSize="25sp" />
+
+                    <TextView
+
+                        android:id="@+id/biriyani_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/biriyani_textView"
+                        android:layout_toEndOf="@id/biriyani_photo"
+                        android:fontFamily="@font/gatholic"
+                        android:text="8km"
+                        android:textColor="@color/green" />
+
+
+
+
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/fried_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/res3" />
+
+                    <TextView
+                        android:id="@+id/fried_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/fried_photo"
+                        android:fontFamily="@font/gatholic"
+                        android:text="Just Salad"
+                        android:textColor="@color/dark_black"
+                        android:textSize="25sp" />
+
+                    <TextView
+
+                        android:id="@+id/fried_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/fried_textView"
+                        android:layout_toRightOf="@id/fried_photo"
+                        android:fontFamily="@font/gatholic"
+                        android:text="3km"
+                        android:textColor="@color/green" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </GridLayout>
+    </ScrollView>
+
+
+</LinearLayout>
